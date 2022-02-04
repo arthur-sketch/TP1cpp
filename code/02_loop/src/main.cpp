@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <list>
+#include <string>
 
 int main()
 {
@@ -50,5 +51,13 @@ int main()
         std::cout<<value<<" ";
     std::cout<<std::endl;
 
+    std::list<std::string> mots = {"ovivipare","mammifère","conifère","champignons"};
+
+    for (std::string& choix : mots)
+    {
+        choix[1]='@';
+        std::cout<<choix<<" ";
+    }
+    std::cout<<std::endl;
     return 0;
 }
